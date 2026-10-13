@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffeff5">
+  <title>Untuk Adee Sayangggg 💗 | 6 Tahun Bersama</title>
+
+  <style>
+    :root {
+      --pink: #ff6f9f;
+      --hot-pink: #f34e88;
+      --soft-pink: #fff0f5;
+      --blush: #ffd7e5;
+      --deep: #7d294c;
+      --text: #633349;
+      --white: #fffdfd;
+      --shadow: 0 18px 55px rgba(199, 72, 120, .15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% 5%, rgba(255, 182, 204, .45), transparent 26rem),
+        radial-gradient(circle at 90% 30%, rgba(255, 216, 231, .6), transparent 24rem),
+        linear-gradient(180deg, #fff7fa 0%, #fff0f5 48%, #fff9fb 100%);
+      overflow-x: hidden;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .hearts-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 5;
+    }
+
+    .floating-heart {
+      position: absolute;
+      bottom: -40px;
+      color: #f45d93;
+      opacity: .65;
+      animation: floatUp 14s linear infinite;
+      filter: drop-shadow(0 3px 5px #ffc4d8);
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg) scale(.7);
+        opacity: 0;
+      }
+
+      12% {
+        opacity: .7;
+      }
+
+      85% {
+        opacity: .55;
+      }
+
+      100% {
+        transform: translateY(-115vh) rotate(35deg) scale(1.25);
+        opacity: 0;
+      }
+    }
+
+    .wrap {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      gap: 12px;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: .4px;
+      color: var(--hot-pink);
+    }
+
+    .nav-pill {
+      border: 1px solid #ffc1d5;
+      color: var(--deep);
+      background: rgba(255, 255, 255, .7);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: .86rem;
+    }
+
+    .hero {
+      min-height: 77vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 38px 0 68px;
+      position: relative;
+    }
+
+    .hero-card {
+      width: min(760px, 100%);
+      padding: clamp(26px, 6vw, 58px);
+      border: 1px solid rgba(255, 177, 203, .75);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, .72);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before,
+    .hero-card::after {
+      content: "♡";
+      position: absolute;
+      color: #ffd1e0;
+      font-size: 5rem;
+      opacity: .75;
+    }
+
+    .hero-card::before {
+      left: 16px;
+      top: 10px;
+      transform: rotate(-20deg);
+    }
+
+    .hero-card::after {
+      right: 18px;
+      bottom: 2px;
+      transform: rotate(18deg);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 8px 14px;
+      color: #bd3f70;
+      background: #ffe4ee;
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--deep);
+      font-size: clamp(2.5rem, 8vw, 5.3rem);
+      line-height: 1.02;
+      margin: 22px 0 16px;
+      font-weight: 700;
+    }
+
+    h1 span {
+      color: var(--hot-pink);
+      font-style: italic;
+    }
+
+    .hero p {
+      max-width: 570px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: clamp(1rem, 2.7vw, 1.12rem);
+    }
+
+    .date-line {
+      margin-top: 22px !important;
+      font-weight: 800;
+      color: #c64c7a;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 21px;
+      font-weight: 800;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, #ff78a6, #ed4b86);
+      box-shadow: 0 9px 22px rgba(237, 75, 134, .25);
+    }
+
+    .btn-secondary {
+      color: #b63d6e;
+      background: #fff;
+      border: 1px solid #ffc1d5;
+    }
+
+    section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-head .mini {
+      color: var(--hot-pink);
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      font-size: .78rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font: 700 clamp(2rem, 5vw, 3rem)/1.1 Georgia, serif;
+      color: var(--deep);
+      margin: 10px 0;
+    }
+
+    .section-head p {
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .story-card {
+      padding: 24px 20px;
+      background: rgba(255, 255, 255, .8);
+      border: 1px solid #ffe0eb;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(199, 72, 120, .08);
+    }
+
+    .story-icon {
+      font-size: 2rem;
+    }
+
+    .story-card h3 {
+      color: #a83665;
+      margin: 12px 0 8px;
+    }
+
+    .story-card p {
+      margin: 0;
+      line-height: 1.7;
+      font-size: .96rem;
+    }
+
+    /* GALERI FOTO
+       Ketiga bingkai memiliki ukuran identik.
+       Ukuran bingkai foto: 130 x 143 px.
+       Lebar kartu foto: 140 px.
+    */
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .photo-card {
+      display: block;
+      box-sizing: border-box;
+      width: 210px;
+      min-width: 210px;
+      max-width: 210px;
+      flex: 0 0 210px;
+      margin: 0;
+      padding: 4px 4px 7px;
+      height: auto;
+      background: #fff;
+      border: 1px solid #ffdce8;
+      border-radius: 8px;
+      box-shadow: 0 5px 14px rgba(199, 72, 120, .09);
+      transform: none;
+    }
+
+    .photo-placeholder {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      width: 200px;
+      min-width: 200px;
+      max-width: 200px;
+      height: 200px;
+      min-height: 200px;
+      max-height: 200px;
+      aspect-ratio: auto;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border-radius: 5px;
+      border: 1px solid #f6a8c3;
+      background: linear-gradient(
+        145deg,
+        #ffe5ee,
+        #fff4f8 55%,
+        #ffd5e4
+      );
+    }
+
+    .photo-placeholder img {
+      display: block;
+      position: absolute;
+      inset: 0;
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      min-height: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: inherit;
+    }
+
+    .photo-caption {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 5px 1px 0;
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: .62rem;
+      line-height: 1.25;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .letter-area {
+      display: grid;
+      place-items: center;
+    }
+
+    .letter {
+      width: min(720px, 100%);
+      background: rgba(255, 255, 255, .88);
+      border: 1px solid #ffcddd;
+      border-radius: 28px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .envelope {
+      font-size: 4rem;
+      margin-bottom: 6px;
+      filter: drop-shadow(0 7px 8px #ffc7da);
+    }
+
+    .letter-content {
+      text-align: left;
+      line-height: 1.95;
+      white-space: pre-line;
+      margin-top: 20px;
+    }
+
+    .signature {
+      font-family: Georgia, serif;
+      font-style: italic;
+      color: #d6477e;
+      font-size: 1.25rem;
+      margin-top: 18px;
+    }
+
+    .promise-box {
+      text-align: center;
+      padding: 36px 24px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #ffdfeb, #fff6fa);
+      border: 1px solid #ffc6d9;
+    }
+
+    .promise-box p {
+      max-width: 650px;
+      margin: 12px auto 0;
+      line-height: 1.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 0 45px;
+      color: #a44b70;
+      font-size: .9rem;
+    }
+
+    .tiny-heart {
+      color: #ef4d88;
+      animation: pulse 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      50% {
+        transform: scale(1.3);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        width: 100%;
+      }
+
+      .photo-card {
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+      }
+
+      .photo-placeholder {
+        width: 130px;
+        height: 143px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 26px;
+      }
+
+      nav {
+        padding-top: 15px;
+      }
+
+      .hero-card {
+        border-radius: 26px;
+      }
+
+      section {
+        padding: 38px 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hearts-layer" aria-hidden="true">
+    <span class="floating-heart"
+      style="left:8%;animation-duration:13s">♡</span>
+
+    <span class="floating-heart"
+      style="left:24%;animation-duration:16s;animation-delay:2s">♥</span>
+
+    <span class="floating-heart"
+      style="left:53%;animation-duration:14s;animation-delay:4s">💕</span>
+
+    <span class="floating-heart"
+      style="left:76%;animation-duration:17s;animation-delay:1s">♡</span>
+
+    <span class="floating-heart"
+      style="left:91%;animation-duration:15s;animation-delay:5s">💗</span>
+  </div>
+
+  <div class="wrap">
+
+    <nav>
+      <div class="brand">♡ adee &amp; mas</div>
+
+      <a class="nav-pill"
+        href="#kenangan"
+        style="text-decoration:none">
+        ♡ Galeri kenangan
+      </a>
+    </nav>
+
+    <!-- HALAMAN PEMBUKA -->
+    <header class="hero" id="home">
+      <div class="hero-card">
+
+        <div class="eyebrow">
+          14 Oktober 2020 — 14 Oktober 2026
+        </div>
+
+        <h1>
+          Happy 6th<br>
+          <span>Anniversary,</span><br>
+          adee sayangggg 💗
+        </h1>
+
+        <p>
+          Enam tahun bukan waktu yang sebentar.
+          Terima kasih sudah menjadi bagian dari cerita hidup mas,
+          tempat pulang ternyaman mas, dan alasan sederhana
+          di balik banyak senyum mas.
+        </p>
+
+        <p class="date-line">
+          6 tahun • 72 bulan • 2.192 hari penuh cerita*
+        </p>
+
+        <div class="button-row">
+          <a class="btn btn-primary"
+            href="#surat"
+            style="text-decoration:none;display:inline-flex;align-items:center">
+            Buka surat cintaku 💌
+          </a>
+
+          <a class="btn btn-secondary"
+            href="#kenangan"
+            style="text-decoration:none;display:inline-flex;align-items:center">
+            Lihat kenangan ↓
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- CERITA KITA -->
+    <section id="cerita">
+
+      <div class="section-head">
+        <div class="mini">Our little universe</div>
+        <h2>Cerita kecil kita ✨</h2>
+
+        <p>
+          Setiap hubungan punya ceritanya sendiri.
+          Ini pengingat kecil bahwa perjalanan kita layak dirayakan,
+          dalam momen besar maupun hal-hal sederhana.
+        </p>
+      </div>
+
+      <div class="story-grid">
+
+        <article class="story-card">
+          <div class="story-icon">🌷</div>
+          <h3>Awal dari semuanya</h3>
+
+          <p>
+            14 Oktober 2020 menjadi tanggal yang selalu punya
+            tempat spesial. Dari hari itu, kita mulai menulis
+            cerita dengan versi terbaik dan belajar bersama.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <div class="story-icon">🫶</div>
+          <h3>Tumbuh bersama</h3>
+
+          <p>
+            Kita mungkin nggak selalu sempurna, tapi semoga
+            kita terus belajar mendengar, memahami, memaafkan,
+            dan memilih satu sama lain.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <div class="story-icon">🌙</div>
+          <h3>Masih banyak nanti</h3>
+
+          <p>
+            Semoga setelah enam tahun ini, masih ada banyak tempat
+            untuk dikunjungi, tawa untuk dibagi, dan kenangan baru
+            untuk kita simpan.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GALERI KENANGAN -->
+    <section id="kenangan">
+
+      <div class="section-head">
+        <div class="mini">Little moments, big love</div>
+        <h2>Galeri kenangan kita 📸</h2>
+
+        <p>
+          Momen-momen favorit kita, disimpan di sini. 💗
+        </p>
+      </div>
+
+      <div class="gallery">
+
+        <!-- FOTO 1 -->
+        <div class="photo-card">
+          <div class="photo-placeholder">
+            <img src="assets/kkk.jpg" alt="Foto kenangan 1">
+          </div>
+
+          <div class="photo-caption">
+            Awal cerita kita
+          </div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="photo-card">
+          <div class="photo-placeholder">
+            <img src="c:\Users\fadak\OneDrive\Gambar\carmen-hearts2hearts-4k-wallpaper-uhdpaper.com-559@5@c.jpg" alt="Foto kenangan 2">
+          </div>
+
+          <div class="photo-caption">
+            Momen yang bikin senyum
+          </div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="photo-card">
+          <div class="photo-placeholder">
+            <img src="foto3.jpg" alt="Foto kenangan 3">
+          </div>
+
+          <div class="photo-caption">
+            Kita, hari ini dan nanti
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SURAT CINTA -->
+    <section id="surat">
+
+      <div class="section-head">
+        <div class="mini">A letter from my heart</div>
+        <h2>Ada surat buat adee 💌</h2>
+
+        <p>
+          Ada hal-hal yang rasanya lebih mudah disampaikan
+          lewat tulisan.
+        </p>
+      </div>
+
+      <div class="letter-area">
+        <div class="letter">
+
+          <div class="envelope" aria-hidden="true">💌</div>
+
+          <h3 style="color:#a83665;margin:0">
+            Untuk adee sayangggg
+          </h3>
+
+          <p style="line-height:1.7">
+            Ada sesuatu dari hati mas yang ingin disampaikan
+            untuk adee.
+          </p>
+
+          <div class="letter-content">Haiii adee sayangggg cintakuuu 💗
+
+Happy 6th anniversary, sayanggg!
+
+Nggak terasa ya, kita sudah berjalan sejauh ini sejak 14 Oktober 2020. Enam tahun yang berisi banyak cerita, tawa, rindu, perbedaan, dan hal-hal yang mungkin cuma kita berdua yang benar-benar mengerti.
+
+Makasih ya, sudah hadir di hidup mass dan menjadi seseorang yang begitu berarti. Makasih untuk setiap perhatian kecil, waktu yang kamu luangkan, dan momen sederhana yang akhirnya jadi kenangan berharga buat mas.
+
+Mas tahu kita nggak selalu sempurna. Mungkin ada hari ketika kita capek, salah paham, atau nggak tahu harus berkata apa. Tapi mas berharap kita selalu punya kemauan untuk saling mendengarkan, memperbaiki diri, dan menjaga hubungan ini dengan tulus.
+
+Di anniversary kita yang ke-6 ini, mas nggak janji semuanya akan selalu mudah. Tapi mas ingin terus belajar menjadi pasangan yang lebih baik buat kamu. Semoga kita bisa terus tumbuh bersama, saling mendukung mimpi masing-masing, dan menciptakan lebih banyak kenangan indah.
+
+Kalau suatu hari nanti kita melihat kembali perjalanan ini, semoga kita bisa tersenyum dan berkata, “Untung ya, kita tetap berjuang dan saling memilih.”
+
+Mass sayanggg banget sama adee. Hari ini, besok, dan semoga di banyak hari yang masih menunggu kita. 💗
+
+Happy aniversary, kesayangankuuu!
+
+            <div class="signature">
+              Dari seseorang yang selalu ingin membuatmu tersenyum ♡
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARAPAN -->
+    <section>
+      <div class="promise-box">
+
+        <div style="font-size:2.3rem">💖</div>
+
+        <h2>Satu harapan untuk kita</h2>
+
+        <p>
+          Semoga hubungan ini selalu punya ruang untuk kejujuran,
+          kesabaran, rasa aman, dan cinta yang ditunjukkan lewat
+          tindakan kecil setiap hari. Terima kasih sudah menjadi
+          bagian dari enam tahun yang berharga ini, adee sayangggg.
+        </p>
+
+        <p style="font-weight:800;color:#c63d75">
+          Kalau mas boleh mengulang dari awal, mass tetap ingin
+          mengenal kamu lagi. I love you, adee sayangggg! 💗💗💗
+        </p>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Dibuat dengan banyak cinta untuk adee sayangggg
+      <span class="tiny-heart">♥</span>
+      <br>
+
+      <span>14 Oktober 2026</span>
+      · *Jumlah hari dihitung untuk periode enam tahun kalender.
+    </footer>
+
+  </div>
+</body>
+</html>
